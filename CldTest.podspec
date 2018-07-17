@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "Test"
+  s.name         = "CldTest"
   s.version      = "0.0.1"
   s.summary      = "Test."
   s.homepage     = "https://github.com/huang0920hua/Test"
