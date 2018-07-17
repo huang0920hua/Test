@@ -13,6 +13,8 @@
 		AF0EBA3D20FD79880006D41C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0EBA3C20FD79880006D41C /* Assets.xcassets */; };
 		AF0EBA4020FD79880006D41C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0EBA3E20FD79880006D41C /* LaunchScreen.storyboard */; };
 		AF0EBA4320FD79880006D41C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0EBA4220FD79880006D41C /* main.m */; };
+		AFA8700520FD8BE100B7E97E /* Test.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AFA8700420FD8BE100B7E97E /* Test.podspec */; };
+		AFA8700920FD8C4800B7E97E /* SDKTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA8700820FD8C4800B7E97E /* SDKTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		AF0EBA3F20FD79880006D41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF0EBA4120FD79880006D41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF0EBA4220FD79880006D41C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFA8700420FD8BE100B7E97E /* Test.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test.podspec; sourceTree = "<group>"; };
+		AFA8700720FD8C4800B7E97E /* SDKTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKTest.h; sourceTree = "<group>"; };
+		AFA8700820FD8C4800B7E97E /* SDKTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,8 @@
 		AF0EBA2720FD79870006D41C = {
 			isa = PBXGroup;
 			children = (
+				AFA8700620FD8BEB00B7E97E /* Source */,
+				AFA8700420FD8BE100B7E97E /* Test.podspec */,
 				AF0EBA3220FD79870006D41C /* Test */,
 				AF0EBA3120FD79870006D41C /* Products */,
 			);
@@ -69,6 +76,15 @@
 				AF0EBA4220FD79880006D41C /* main.m */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		AFA8700620FD8BEB00B7E97E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AFA8700720FD8C4800B7E97E /* SDKTest.h */,
+				AFA8700820FD8C4800B7E97E /* SDKTest.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +118,7 @@
 				TargetAttributes = {
 					AF0EBA2F20FD79870006D41C = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -129,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA8700520FD8BE100B7E97E /* Test.podspec in Resources */,
 				AF0EBA4020FD79880006D41C /* LaunchScreen.storyboard in Resources */,
 				AF0EBA3D20FD79880006D41C /* Assets.xcassets in Resources */,
 				AF0EBA3B20FD79880006D41C /* Main.storyboard in Resources */,
@@ -144,6 +161,7 @@
 			files = (
 				AF0EBA3820FD79880006D41C /* ViewController.m in Sources */,
 				AF0EBA4320FD79880006D41C /* main.m in Sources */,
+				AFA8700920FD8C4800B7E97E /* SDKTest.m in Sources */,
 				AF0EBA3520FD79870006D41C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,11 +296,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Z38H3AGXN3;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = careland.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5111c0b0-926e-4041-bb4b-e9340e518f04";
+				PROVISIONING_PROFILE_SPECIFIER = carelandCommProfile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -291,11 +312,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = careland.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
