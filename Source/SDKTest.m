@@ -9,5 +9,8 @@
 #import "SDKTest.h"
 
 @implementation SDKTest
-
++ (void)test
+{
+    NSLog(@"SDKTest test");
+}
 @end

@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface SDKTest : NSObject
-
++ (void)test;
 @end
